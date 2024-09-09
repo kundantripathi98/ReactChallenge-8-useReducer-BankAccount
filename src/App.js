@@ -58,6 +58,7 @@ function reducer(state, action) {
           state.balance < state.withdrawMoney ? state.withdrawMoney : 0,
       };
     }
+      
     case "requestLoan": {
       return {
         ...state,
@@ -65,6 +66,7 @@ function reducer(state, action) {
         balance: state.loan ? state.balance : state.balance + action.payLoad,
       };
     }
+      
     case "payLoan": {
       return {
         ...state,
@@ -72,6 +74,7 @@ function reducer(state, action) {
         balance: state.loan ? state.balance - action.payLoad : state.balance,
       };
     }
+      
     case "closeAccount": {
       return {
         ...state,
