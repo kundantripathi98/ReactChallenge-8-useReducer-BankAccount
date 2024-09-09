@@ -1,6 +1,5 @@
 import { useReducer } from "react";
 import "./styles.css";
-
 /*
 INSTRUCTIONS / CONSIDERATIONS:
 
@@ -104,6 +103,7 @@ export default function App() {
           Open account
         </button>
       </p>
+            
       <p>
         <input
           type="number"
